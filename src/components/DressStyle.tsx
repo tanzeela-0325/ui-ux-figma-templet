@@ -6,11 +6,11 @@ import pic_man3 from "../public/Frame 63.png";
 
 export default function DressStyle() {
     return (
-        <div className="w-full max-w-[1240px] mx-auto mt-10">
+        <div className="w-full max-w-[1240px] mx-auto mt-10 bg-slate-200 rounded-3xl ">
             <h1 className="text-[40px] flex justify-center font-bold">
                 <b>BROWSE BY DRESS STYLE</b>
             </h1>
-            <div className="flex flex-col gap-[20px]">
+            <div className="flex flex-col gap-[20px] ml-[60px] pb-[20px]">
 
                 {/* First Row */}
                 <div className="flex flex-col sm:flex-row gap-[20px] mt-[25px]">

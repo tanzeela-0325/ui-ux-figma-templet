@@ -13,7 +13,7 @@ export default function TopSalling() {
         <b>TOP SELLING</b>
       </h1>
 
-      <div className="flex flex-wrap gap-[25px] mt-6 justify-center">
+      <div className="flex sm:flex-row flex-wrap gap-[15px] mt-6 justify-center">
         {/* Card 01 */}
         <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px] border-[1px] rounded-2xl border-l-stone-400">
           <Image
@@ -79,7 +79,7 @@ export default function TopSalling() {
         </div>
       </div>
 
-      <button className="flex justify-center items-center border-[1px] border-x-slate-400 rounded-full pl-[45px] pt-[10px] pb-[10px] pr-[45px] mt-[25px] ml-[45%]">
+      <button className="flex justify-center items-center border-[1px] border-x-slate-400 rounded-full pl-[45px] pt-[10px] pb-[10px] pr-[45px] ml-[55px] mt-[5px] sm:mt-[25px] sm:ml-[45%]">
         View All
       </button>
     </div>

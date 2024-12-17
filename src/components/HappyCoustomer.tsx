@@ -10,16 +10,16 @@ export default function HappyCustomer(){
 
             <h1 className="text-[40px] flex font-bold "><b>OUR HAPPY CUSTOMERS</b></h1>
             
-            <div className="flex flex-row mt-4 gap-[40px]">
-                <div className="flex flex-col space-y-4">
+            <div className="flex sm:flex-row flex-col mt-4 gap-[40px] ">
+                <div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl sm:w-[400px] w-[300px] m-[8px] h-[239.58px] pt-[25px] pl-[25px]">
                     <Image src={stars_1} alt="star-log-01"/>
                     <Image src={brand_1} alt="brand-log-01" />
-                    <p>I am blown away by the quality and style of the <br />
+                    <p className="">I am blown away by the quality and style of the <br />
                         clothes I received from Shop.co. From casual <br />
                         wear to elegant dresses, every piece I have bought <br />
                         has exceeded my expectations.</p>
                 </div>
-                <div className="flex flex-col space-y-4">
+                <div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl sm:w-[400px] w-[350px] h-[239.58px] pt-[25px] pl-[25px]">
                    <Image src={stars_1} alt="star-log-02"/>
                    <Image src={brand_2} alt="brabd-log-02" />
 
@@ -31,7 +31,7 @@ export default function HappyCustomer(){
                     </p>
                 </div>
 
-                <div className="flex flex-col space-y-4">
+                <div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl sm:w-[400px] w-[350px] h-[239.58px] pt-[25px] pl-[25px]">
                    <Image src={stars_1} alt="star-log-02"/>
                    <Image src={brand_3} alt="brand-log-03" />
 
