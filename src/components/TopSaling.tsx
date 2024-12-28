@@ -8,20 +8,20 @@ import price from "../public/Frame 59 (1).png";
 
 export default function TopSalling() {
   return (
-    <div className="w-full max-w-[1240px] mx-auto mt-24">
-      <h1 className="text-[40px] flex justify-center font-bold">
+    <div className="w-full max-w-[1240px] mx-auto mt-24 px-4">
+      <h1 className="lg:text-[46px] text-[32px] flex justify-center font-bold">
         <b>TOP SELLING</b>
       </h1>
 
-      <div className="flex sm:flex-row flex-wrap gap-[15px] mt-6 justify-center">
+      <div className="flex lg:flex-row flex-col gap-[15px] mt-6 justify-center">
         {/* Card 01 */}
-        <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px] border-[1px] rounded-2xl border-l-stone-400">
+        <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px] border-[1px] rounded-2xl border-stone-400">
           <Image
             src={img_1}
             alt="img-01"
             width={1000}
             height={1000}
-            className="w-full h-[298px] object-cover"
+            className="w-full  h-[298px] rounded-2xl  object-cover"
           />
           <div className="flex flex-col space-y-2">
             <p className="text-xs">VERTICAL STRIPED SHIRT</p>
@@ -31,13 +31,13 @@ export default function TopSalling() {
         </div>
 
         {/* Card 02 */}
-        <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px] border-[1px] rounded-2xl border-l-stone-400">
+        <div className="flex flex-col space-y-4 w-full lg:w-[295px] h-[444px] border-[1px] rounded-2xl border-stone-400">
           <Image
             src={img_2}
             alt="img-02"
             width={1000}
             height={1000}
-            className="w-full h-[298px] object-cover"
+            className="w-full h-[298px] rounded-2xl object-cover"
           />
           <div className="flex flex-col space-y-2">
             <p className="text-xs">VERTICAL STRIPED SHIRT</p>
@@ -47,13 +47,13 @@ export default function TopSalling() {
         </div>
 
         {/* Card 03 */}
-        <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px] border-[1px] rounded-2xl border-l-stone-400">
+        <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px] border-[1px] rounded-2xl border-stone-400">
           <Image
             src={img_3}
             alt="img-03"
             width={1000}
             height={1000}
-            className="w-full h-[298px] object-cover"
+            className="w-full h-[298px] rounded-2xl object-cover"
           />
           <div className="flex flex-col space-y-2">
             <p className="text-xs">VERTICAL STRIPED SHIRT</p>
@@ -63,13 +63,13 @@ export default function TopSalling() {
         </div>
 
         {/* Card 04 */}
-        <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px] border-[1px] rounded-2xl border-l-stone-400">
+        <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px] border-[1px] rounded-2xl border-stone-400">
           <Image
             src={img_4}
             alt="img-04"
             width={1000}
             height={1000}
-            className="w-full h-[298px] object-cover"
+            className="w-full h-[298px] rounded-2xl object-cover"
           />
           <div className="flex flex-col space-y-2">
             <p className="text-xs">VERTICAL STRIPED SHIRT</p>
@@ -79,7 +79,7 @@ export default function TopSalling() {
         </div>
       </div>
 
-      <button className="flex justify-center items-center border-[1px] border-x-slate-400 rounded-full pl-[45px] pt-[10px] pb-[10px] pr-[45px] ml-[55px] mt-[5px] sm:mt-[25px] sm:ml-[45%]">
+      <button className="flex justify-center items-center border-[1px] border-slate-400 rounded-full px-6 py-2  mt-8 mx-auto text-sm md:text-base">
         View All
       </button>
     </div>

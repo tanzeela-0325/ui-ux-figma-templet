@@ -12,23 +12,37 @@ import stars from "../public/Frame 39.png";
 import price from "../public/Frame 44.png";
 import SideBar from "./SidBar";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { PaginationDemo } from "./Pagination";
+import { SidebarProvider, SidebarTrigger } from "./ui/sidebar";
+import { AppSidebar } from "./responsive-sidebar";
 
 
 export default function Category(){
     return(
-        <div className="flex flex-row gap-[20px] mx-[100px] w-[1440px] mt-[20px]">
+      <>
+      <SidebarProvider>
+        <div className="block lg:hidden">
+        <AppSidebar/>
+        </div>
+        <main>
+          <div className="block lg:hidden">
+            <SidebarTrigger/>
+          </div>
+        <div className="w-full flex gap-8  max-w-[1240px] mx-auto mt-8 px-6">
+          <div className="hidden lg:block">
           <SideBar/>
+          </div>
           {/* Section One */}
           <div>
           <div className="flex flex-row justify-between mt-[20px]">
-            <h1 className="text-[30px] font-bold"><b>Casual</b></h1>
+            <h1 className="lg:text-[30px] text-[24px] font-bold"><b>Casual</b></h1>
               <div className="flex flex-row gap-[5px] space-x-3">
-                <p className="text-lg text-gray-400">Showing 1-10 of 100 Products</p>
-                <p className=" flex flex-row text-xl text-gray-400">Sort by: <span className="font-bold text-black">Most Popular</span> <span><MdOutlineKeyboardArrowDown size={25} /></span></p>
+                <p className="lg:text-lg tex-[14px] text-gray-400">Showing 1-10 of 100 Products</p>
+                <p className=" lg:flex flex-row lg:text-xl text-[14px] text-gray-400 sm:block hidden">Sort by: <span className="font-bold text-black sm:block  hidden">Most Popular</span> <span className="sm:block hidden"><MdOutlineKeyboardArrowDown size={25} /></span></p>
               </div>
             </div>
          
-          <div className="grid grid-cols-3 gap-[20px]">
+          <div className="grid lg:grid-cols-3 grid-cols-2 grid-rows-3 gap-[20px]">
  
             {/* Card 01 */}
             <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px] ">
@@ -121,7 +135,7 @@ export default function Category(){
               </div>
             </div>
             {/* Card 07 */}
-            <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px]">
+            <div className=" lg:flex-col space-y-4 w-full sm:w-[295px] h-[444px] lg:block hidden">
               <Image
               src={img_7}
               alt="img-07"
@@ -136,7 +150,7 @@ export default function Category(){
               </div>
             </div>
             {/* Card 08 */}
-            <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px]">
+            <div className=" flex-col space-y-4 w-full sm:w-[295px] h-[444px] lg:block hidden">
               <Image
               src={img_8}
               alt="img-08"
@@ -151,7 +165,7 @@ export default function Category(){
               </div>
             </div>
             {/* Card 09 */}
-            <div className="flex flex-col space-y-4 w-full sm:w-[295px] h-[444px]">
+            <div className=" flex-col space-y-4 w-full sm:w-[295px] h-[444px] lg:block hidden">
               <Image
               src={img_9}
               alt="img-09"
@@ -164,9 +178,19 @@ export default function Category(){
                 <Image src={stars} alt="stars" />
                 <h2>$80</h2>
               </div>
+             </div>
             </div>
-            </div>
+
+            <div className="flex justify-center">
+               <PaginationDemo/>
+           </div>
+            
+           
           </div>
+          
         </div>
+        </main>
+      </SidebarProvider>
+    </>
     )
 }

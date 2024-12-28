@@ -4,22 +4,24 @@ import brand_1 from "../public/Frame 31.png";
 import brand_2 from "../public/Frame 05.png";
 import brand_3 from "../public/Frame 06.png";
 
+
 export default function HappyCustomer(){
     return(
-        <div className="w-full max-w-[1240px] mx-auto mt-24">
+          <div className="w-full max-w-[1240px] mx-auto mt-8 px-4">
 
-            <h1 className="text-[40px] flex font-bold "><b>OUR HAPPY CUSTOMERS</b></h1>
+            <h1 className="lg:text-[46px] text-[32px] flex font-bold "><b>OUR HAPPY CUSTOMERS</b></h1>
             
-            <div className="flex sm:flex-row flex-col mt-4 gap-[40px] ">
-                <div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl sm:w-[400px] w-[300px] m-[8px] h-[239.58px] pt-[25px] pl-[25px]">
+             <div className="flex sm:flex-row flex-col mt-4 gap-[20px] ">
+                <div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl w-full h-auto py-5 px-6">
                     <Image src={stars_1} alt="star-log-01"/>
                     <Image src={brand_1} alt="brand-log-01" />
-                    <p className="">I am blown away by the quality and style of the <br />
+                    <p>I am blown away by the quality and style of the <br />
                         clothes I received from Shop.co. From casual <br />
                         wear to elegant dresses, every piece I have bought <br />
-                        has exceeded my expectations.</p>
+                        has exceeded my expectations.
+                    </p>
                 </div>
-                <div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl sm:w-[400px] w-[350px] h-[239.58px] pt-[25px] pl-[25px]">
+                <div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl w-full h-auto py-5 px-6">
                    <Image src={stars_1} alt="star-log-02"/>
                    <Image src={brand_2} alt="brabd-log-02" />
 
@@ -31,7 +33,7 @@ export default function HappyCustomer(){
                     </p>
                 </div>
 
-                <div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl sm:w-[400px] w-[350px] h-[239.58px] pt-[25px] pl-[25px]">
+                <div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl w-full h-auto py-5 px-4">
                    <Image src={stars_1} alt="star-log-02"/>
                    <Image src={brand_3} alt="brand-log-03" />
 
@@ -42,7 +44,8 @@ export default function HappyCustomer(){
                      with the latest trends.
                     </p>
                 </div>
-            </div>
-        </div>
+            </div> 
+        </div>  
+       
     )
 }

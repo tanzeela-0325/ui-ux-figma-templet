@@ -9,14 +9,14 @@ import price_2 from "../public/Frame 44.png";
 
 export default function NewArrival() {
     return (
-        <div className="w-full max-w-[1240px] mx-auto mt-24 px-4">
+        <div className="w-full max-w-[1240px] mx-auto mt-5 px-4">
             <h1 className="text-[28px] md:text-[35px] lg:text-[40px] flex justify-center font-bold">
                 <b>NEW ARRIVALS</b>
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
                 {/* Card 01 */}
-                <div className="flex flex-col space-y-4 border-[1px] rounded-2xl border-stone-400">
-                    <Image src={pic_1} alt="img-01" width={1000} height={1000} className="w-full h-auto rounded-t-2xl" />
+                <div className="flex flex-col space-y-4 border-[1px] rounded-3xl border-stone-400">
+                    <Image src={pic_1} alt="img-01" width={1000} height={1000} className="w-full h-auto " />
                     <div className="flex flex-col space-y-2 px-4">
                         <p className="text-sm md:text-xs">T-SHIRT WITH TAPE DETAILS</p>
                         <Image src={stars} alt="img-02" className="w-[80%]" />
@@ -25,8 +25,8 @@ export default function NewArrival() {
                 </div>
 
                 {/* Card 02 */}
-                <div className="flex flex-col space-y-4 border-[1px] rounded-2xl border-stone-400">
-                    <Image src={pic_2} alt="img-02" width={1000} height={1000} className="w-full h-auto rounded-t-2xl" />
+                <div className="flex flex-col space-y-4 border-[1px] rounded-3xl border-stone-400">
+                    <Image src={pic_2} alt="img-02" width={1000} height={1000} className="w-full h-auto" />
                     <div className="flex flex-col space-y-2 px-4">
                         <p className="text-sm md:text-xs">SKINNY FIT JEANS</p>
                         <Image src={stars} alt="img-02" className="w-[80%]" />
@@ -35,8 +35,8 @@ export default function NewArrival() {
                 </div>
 
                 {/* Card 03 */}
-                <div className="flex flex-col space-y-4 border-[1px] rounded-2xl border-stone-400">
-                    <Image src={pic_3} alt="img-03" width={1000} height={1000} className="w-full h-auto rounded-t-2xl" />
+                <div className="flex flex-col space-y-4 border-[1px] rounded-3xl border-stone-400">
+                    <Image src={pic_3} alt="img-03" width={1000} height={1000} className="w-full h-auto " />
                     <div className="flex flex-col space-y-2 px-4">
                         <p className="text-sm md:text-xs">CHECKERED SHIRT</p>
                         <Image src={stars} alt="img-02" className="w-[80%]" />
@@ -45,8 +45,8 @@ export default function NewArrival() {
                 </div>
 
                 {/* Card 04 */}
-                <div className="flex flex-col space-y-4 border-[1px] rounded-2xl border-stone-400">
-                    <Image src={pic_4} alt="img-04" width={1000} height={1000} className="w-full h-auto rounded-t-2xl" />
+                <div className="flex flex-col space-y-4 border-[1px] rounded-3xl border-stone-400">
+                    <Image src={pic_4} alt="img-04" width={1000} height={1000} className="w-full h-auto"/>
                     <div className="flex flex-col space-y-2 px-4">
                         <p className="text-sm md:text-xs">SLEEVE STRIPED T-SHIRT</p>
                         <Image src={stars} alt="img-02" className="w-[80%]" />
@@ -55,7 +55,7 @@ export default function NewArrival() {
                 </div>
             </div>
 
-            <button className="flex justify-center items-center border-[1px] border-slate-400 rounded-full px-6 py-2 mt-8 mx-auto text-sm md:text-base">
+            <button className="flex justify-center items-center border-[1px] border-slate-400 rounded-full px-6 py-2  mt-8 mx-auto text-sm md:text-base">
                 View All
             </button>
         </div>

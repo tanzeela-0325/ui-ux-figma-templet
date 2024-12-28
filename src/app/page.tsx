@@ -9,6 +9,8 @@ export default function Home() {
     <div>
       <HeroSection/>
       <br />
+    
+      <br/>
       <NewArrival/>
       <br />
       <TopSalling/>

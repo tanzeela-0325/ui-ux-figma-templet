@@ -13,7 +13,7 @@ export default function Footer(){
 
                   
         
-        <div className="w-[1440px] h-auto lg:h-[589px] items-center bg-gray-200 mt-10">
+        <div className="max-w-[1440px] w-full h-auto lg:h-[589px] items-center bg-gray-200 mt-10">
 
                 <div className="">
                     <Image src={Frame} alt="frame" width={1000} height={1000} className="w-[1241px] h-[180px] m-auto "/>
