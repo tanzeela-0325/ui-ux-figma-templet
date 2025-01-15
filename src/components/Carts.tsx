@@ -1,11 +1,11 @@
 import Image from "next/image";
-import pic_1 from "../public/Frame 07.png";
-import pic_2 from "../public/Frame 33.1.png";
-import pic_3 from "../public/Frame 33.2.png";
-import Dlete_1 from "../public/Frame 00.png";
-import box_1 from "../public/Frame 17.png";
-import img_4 from "../public/Frame 3.png";
-import img_5 from "../public/arrow-down-bold 1.png";
+import pic_1 from "../../public/Frame 07.png";
+import pic_2 from "../../public/Frame 33.1.png";
+import pic_3 from "../../public/Frame 33.2.png";
+import Dlete_1 from "../../public/Frame 00.png";
+import box_1 from "../../public/Frame 17.png";
+import img_4 from "../../public/Frame 3.png";
+import img_5 from "../../public/arrow-down-bold 1.png";
 
 export default function Cartes() {
   return (
@@ -38,7 +38,7 @@ export default function Cartes() {
           <div className="w-full sm:w-[667px] h-[1px] bg-gray-300" />
 
           {/* Card 02 */}
-          <div className="flex flex-row justify-between  pt-[5px] m-[10px]  lg:w-[667px] lg:[124px]  w-full h-[99px]">
+          <div className="flex flex-row justify-between   lg:m-[10px]  lg:w-[667px] lg:[124px]  w-full h-[99px]">
             <div>
               <Image src={pic_2} alt="img-02" width={1000} height={1000} className="lg:w-[124px] lg:h-[124px] w-[99px] h-[99px]" />
             </div>
@@ -58,7 +58,7 @@ export default function Cartes() {
           <div className="w-full sm:w-[667px] h-[1px] bg-gray-300" />
 
           {/* Card 03 */}
-          <div className="flex flex-row justify-between pt-[5px] m-[10px]  lg:w-[667px] lg:h-[124px]  w-full h-[99px]">
+          <div className="flex flex-row justify-between  m-[10px]  lg:w-[667px] lg:h-[124px]  w-full h-[99px]">
             <div>
               <Image src={pic_3} alt="img-03" width={1000} height={1000} className="lg:w-[124px] lg:h-[124px] w-[99px] h-[99px]" />
             </div>
@@ -101,12 +101,12 @@ export default function Cartes() {
           </ul>
           <div className="flex flex-row  lg:justify-around gap-2 ">
             <Image src={img_4} alt="img-04" className=" lg:w-[326px] lg:h-[48px] w-[218px] h-[48px]" />
-            <button className="bg-black text-white lg:w-[119px] lg:h-[48px] w-[88px] h-[48px] rounded-full">
+            <button className="bg-black text-white lg:w-[119px] lg:h-[48px] w-[88px] h-[48px] rounded-full hover:scale-105  transition-all cursor-pointer">
               Apply
             </button>
           </div>
           <div className="flex flex-row justify-center items-center  gap-[4px] relative">
-            <button className="bg-black text-white rounded-full lg:w-[457px] lg:h-[60px] w-full h-[52px] flex-row">
+            <button className="bg-black text-white rounded-full lg:w-[457px] lg:h-[60px] w-full h-[52px] flex-row hover:scale-105   transition-all cursor-pointer">
               Go to Checkout
             </button>
             <Image src={img_5} alt="img-05" className="absolute ml-[140px] " />

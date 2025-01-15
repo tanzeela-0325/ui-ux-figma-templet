@@ -9,7 +9,7 @@ import Image from "next/image"
 import { BsSliders2Vertical } from "react-icons/bs"
 import { LuChevronRight } from "react-icons/lu"
 import { MdKeyboardArrowUp } from "react-icons/md"
-import pic_1 from "../public/Group 7.png";
+import pic_1 from "../../public/Group 7.png";
 import { IoIosCheckmark } from "react-icons/io"
 
 

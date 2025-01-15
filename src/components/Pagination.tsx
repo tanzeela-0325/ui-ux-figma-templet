@@ -21,15 +21,15 @@ import {
 
           <div className="flex">
           <PaginationItem>
-            <PaginationLink href="#">1</PaginationLink>
+            <PaginationLink href="/products">1</PaginationLink>
           </PaginationItem>
           <PaginationItem>
-            <PaginationLink href="#" isActive>
+            <PaginationLink href="/catagorys" isActive>
               2
             </PaginationLink>
           </PaginationItem>
           <PaginationItem>
-            <PaginationLink href="#">3</PaginationLink>
+            <PaginationLink href="/carts">3</PaginationLink>
           </PaginationItem>
           <PaginationItem>
             <PaginationEllipsis />

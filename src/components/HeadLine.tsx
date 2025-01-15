@@ -1,9 +1,9 @@
 import Image from "next/image";
-import pic_1 from "../public/Group.png";
-import pic_2 from "../public/zara-logo-1 1.png";
-import pic_3 from "../public/gucci-logo-1 1.png";
-import pic_4 from "../public/prada-logo-1 1.png";
-import pic_5 from "../public/group.1.png";
+import pic_1 from "../../public/Group.png";
+import pic_2 from "../../public/zara-logo-1 1.png";
+import pic_3 from "../../public/gucci-logo-1 1.png";
+import pic_4 from "../../public/prada-logo-1 1.png";
+import pic_5 from "../../public/group.1.png";
 
 export default function HeadLine() {
     return (

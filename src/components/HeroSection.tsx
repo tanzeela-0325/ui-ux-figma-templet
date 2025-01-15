@@ -1,16 +1,16 @@
 
 import Image from "next/image";
-import pic_1 from "../public/Rectangle 2.png";
-import pic_2 from "../public/Vector.png";
-import pic_3 from "../public/Vector.png";
-import pic_01 from "../public/Rectangle 2.1.png";
+import pic_1 from "../../public/Rectangle 2.png";
+import pic_2 from "../../public/Vector.png";
+import pic_3 from "../../public/Vector.png";
+import pic_01 from "../../public/Rectangle 2.1.png";
 
 import HeadLine from "./HeadLine";
 
 export default function HeroSection() {
     return (
         <div>
-           <div className=" relative  h-auto w-full ">
+           <div className=" relative h-auto w-full">
 
               <Image 
                 src={pic_1}
@@ -33,7 +33,7 @@ export default function HeroSection() {
                         Browse through our diverse range of meticulously crafted garments.Designed<br/>
                         to bring out your individuality and cater to your sense of style.<br/>
                     </p>
-                    <button className="bg-black text-white rounded-full md:mt-4 lg:w-[210px] lg:h-[52px] md:text-center text-sm md:text-base w-[358px] h-[52px] ml-[15px]">
+                    <button className="bg-black text-white rounded-full md:mt-4 lg:w-[210px] lg:h-[52px] md:text-center text-sm md:text-base w-[358px] h-[52px]  ml-[20px] hover:scale-105   transition-all cursor-pointer">
                         Shop Now
                     </button>
                     <div className="grid grid-cols-2 grid-rows-2 gap-[55px] p-[56px]  md:hidden bloc">
