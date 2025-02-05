@@ -4,7 +4,6 @@ import img_2 from "../../public/image 2.png";
 import img_5 from "../../public/image 5.png";
 import img_6 from "../../public/image 6.png";
 import img_1 from "../../public/image 1.png";
-import box_3 from "../../public/Frame 17.png";
 import { TiTick } from "react-icons/ti";
 import { BsThreeDots } from "react-icons/bs";
 import { BsSliders2Vertical } from "react-icons/bs";
@@ -15,6 +14,8 @@ import pic_3 from "../../public/Frame 34(1).png";
 import pic_4 from "../../public/Frame 38.(1).png";
 import { FaStar } from "react-icons/fa";
 import { ProductData_3 } from "@/app/data/cart-detail";
+import { FiMinus } from "react-icons/fi";
+import { HiPlusSmall } from "react-icons/hi2";
 
 
 const star =[<FaStar size={20} key={1} />, <FaStar size={20}  key={2}/>, <FaStar size={20} key={3} />, <FaStar size={20} key={4}/>]
@@ -26,13 +27,15 @@ export default function Products() {
       <div className="w-full h-auto  max-w-[1240px] mx-auto mt-12 px-6">
         <div className="flex flex-col lg:flex-row lg:gap-[40px] gap-6 ">
           <div className="flex flex-row lg:flex-col gap-[5px]">
-            <Image
+
+           <Image
               src={img_2}
               alt="img-02"
               width={1000}
               height={1000}
               className="w-[111px] h-[106px]  lg:w-[152px] lg:h-[167px]"
             />
+           
             <Image
               src={img_5}
               alt="img-05"
@@ -47,6 +50,7 @@ export default function Products() {
               height={1000}
               className="w-[111px] h-[106px] lg:w-[152px] lg:h-[167px] hover:border-[1px] border-gray-900 rounded-2xl"
             />
+            
           </div>
 
           <div>
@@ -58,6 +62,7 @@ export default function Products() {
               className=" w-full lg:w-[444px] h-[530px] hover:border-[1px] border-gray-900 rounded-2xl "
             />
           </div>
+          
 
           <div className="space-y-9">
             <h1 className="lg:text-[40px] text-[24px] flex justify-center font-bold">
@@ -98,25 +103,25 @@ export default function Products() {
             <div className="lg:space-y-8 space-y-4 mt-3">
               <h1 className="text-slate-400">Choose Size</h1>
               <div className="flex flex-row gap-[10px]">
-                <button className="bg-gray-200 text-slate-400 hover:text-white hover:bg-black rounded-full lg:w-[86px] lg:h-[46px] w-[74px] h-[39px]">
+                <button className="bg-gray-200 text-slate-400 lg:text-lg text-xs hover:text-white hover:bg-black rounded-full lg:w-[86px] lg:h-[46px] w-[74px] h-[39px]">
                   Small
                 </button>
-                <button className="bg-gray-200 text-slate-400 hover:text-white hover:bg-black rounded-full lg:w-[105px] lg:h-[46px] w-[90px] h-[39px]">
+                <button className="bg-gray-200 text-slate-400 lg:text-lg text-xs hover:text-white hover:bg-black rounded-full lg:w-[105px] lg:h-[46px] w-[90px] h-[39px]">
                   Medium
                 </button>
-                <button className="bg-gray-200 text-slate-400 hover:text-white  hover:bg-black rounded-full lg:w-[89px] lg:h-[46px] w-[76px] h-[39px]">
+                <button className="bg-gray-200 text-slate-400 lg:text-lg text-xs hover:text-white  hover:bg-black rounded-full lg:w-[89px] lg:h-[46px] w-[76px] h-[39px]">
                   Large
                 </button>
-                <button className="bg-gray-200 text-slate-400 hover:text-white hover:bg-black rounded-full lg:w-[104px] lg:h-[46px] w-[89px] h-[39px]">
+                <button className="bg-gray-200 text-slate-400 lg:text-lg text-xs hover:text-white hover:bg-black rounded-full lg:w-[104px] lg:h-[46px] w-[89px] h-[39px]">
                   X-Large
                 </button>
               </div>
               <div className="flex flex-row gap-[10px]">
-                <Image
-                  src={box_3}
-                  alt="box-03"
-                  className="lg:w-[170px] w-[110px] lg:h-[52px] h-[44px]"
-                />
+             <div className="w-[100px] h-[40px] flex justify-between p-3 items-center rounded-[62px] bg-[#f0f0f0] text-gray-400" >
+                <FiMinus />
+                1
+                <HiPlusSmall />
+                </div> 
                 <button className="bg-black text-white rounded-full lg:w-[400px] lg:h-[52px] w-[236px] h-[44px]  hover:scale-105   transition-all cursor-pointe">
                   Add to Cart
                 </button>

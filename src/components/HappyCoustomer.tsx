@@ -33,30 +33,7 @@ export default function HappyCustomer(){
 
               ))}
 
-                {/*<div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl w-full h-auto py-5 px-6">
-                   <Image src={stars_1} alt="star-log-02"/>
-                   <Image src={brand_2} alt="brabd-log-02" />
-
-                   <p>Finding clothes that align with my personal <br />
-                     style used to be a challenge until I discovered <br />
-                     Shop.co. The range of options they offer is truly <br />
-                     remarkable, catering to a variety of tastes and <br />
-                     occasions.
-                    </p>
-                </div>
-
-                <div className="flex flex-col space-y-4 border-[1px] border-gray-200 rounded-xl w-full h-auto py-5 px-4">
-                   <Image src={stars_1} alt="star-log-02"/>
-                   <Image src={brand_3} alt="brand-log-03" />
-
-                   <p>As someone whos always on the lookout for <br />
-                     unique fashion pieces, I am thrilled to have <br />
-                     stumbled upon Shop.co. The selection of  <br />
-                     clothes is not only diverse but also on-point <br />
-                     with the latest trends.
-                    </p>
-                </div>*/}
-            </div> 
+                          </div> 
         </div>  
        
     )

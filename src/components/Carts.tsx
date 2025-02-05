@@ -1,84 +1,98 @@
 import Image from "next/image";
-import pic_1 from "../../public/Frame 07.png";
-import pic_2 from "../../public/Frame 33.1.png";
-import pic_3 from "../../public/Frame 33.2.png";
-import Dlete_1 from "../../public/Frame 00.png";
-import box_1 from "../../public/Frame 17.png";
-import img_4 from "../../public/Frame 3.png";
 import img_5 from "../../public/arrow-down-bold 1.png";
+import { RiDeleteBin6Line } from "react-icons/ri";
+import { FiMinus } from "react-icons/fi";
+import { HiPlusSmall } from "react-icons/hi2";
+
+
+interface Icart
+{
+  id:number,
+  imageurl:string,
+  title:string,
+  size:string,
+  color:string,
+  price:string
+
+}
+const CartItem:Icart[] = [
+  
+  {
+    id:1,
+    imageurl:"/Frame 07.png",
+    title:"Gradient Graphic T-shirt",
+    size:"Large",
+    color:"White",
+    price:"$145"
+  },
+  {
+    id:2,
+    imageurl:"/Frame 33.1.png",
+    title:"CHECKERED SHIRT",
+    size:"Medium",
+    color:"Red",
+    price:"$180"
+  },
+  {
+    id:3,
+    imageurl:"/Frame 33.2.png",
+    title:"SKINNY FIT JEANS",
+    size:"Large",
+    color:"Blue",
+    price:"$240"
+  }
+  
+]
 
 export default function Cartes() {
   return (
-    <div className="w-full max-w-[1250px] mx-auto mt-10 px-4">
+    <>
+    <div className="w-full max-w-[1250px] px-6 mt-10 ">
       <h1 className="text-[40px] sm:text-[30px] md:text-[35px] font-bold">
         <b>Your cart</b>
       </h1>
 
-      <div className="flex flex-col px-5 xl:flex-row gap-6 ">
+      <div className="flex flex-col mt-4 p-4 xl:flex-row gap-6 ">
         {/* Section One */}
-        <div className="flex flex-col w-full h-auto lg:space-y-2 lg:w-[715px] space-y-4 px-4 py-4 lg:h-[508px] lg:p-[10px] border-[1px]  border-gray-200 rounded-lg">
-          {/* Card 01 */}
-          <div className="flex flex-row  justify-between  lg:m-[10px] lg:w-[667px] lg:h-[124px] w-full h-[99px]">
-            <div>
-              <Image src={pic_1} alt="img-01" width={1000} height={1000} className="lg:w-[124px] lg:h-[124px] w-[99px] h-[99px]" />
-            </div>
-            <div className="flex flex-col lg:space-y-1 space-y-1 ml-[10px]">
-              <p className="lg:text-[25px] text-[10px]"><b>Gradient Graphic T-shirt</b></p>
+        <div className="flex flex-col w-full p-[24px] mb-6 border-b  lg:h-full  border-[1px]  border-gray-200 rounded-lg">
+          {CartItem .map((item) =>(
+            <div key={item.id} className="flex flex-row  justify-between mb-6 lg:m-[10px] lg:w-[667px] lg:h-[124px] w-full h-[99px]">
+          
+            <Image src={item.imageurl} alt="img-01" width={1000} height={1000} className="lg:w-[124px] lg:h-[124px] w-[99px] h-[99px] " />
+            
+            <div className="flex flex-col space-y-1 ">
+              <p className="sm:text-[25px] text-[10px]"><b>{item.title}</b></p>
               <ul className="flex flex-col ">
-                <li className="text-[12px]">Size: Large</li>
-                <li className="text-[12px]">Color: White</li>
+                <li className="text-[12px]">Size: {item.size}</li>
+                <li className="text-[12px]">Color: {item.color}</li>
               </ul>
-              <p className="lg:text-xl text-[12px]  font-bold">$145</p>
+              <p className="sm:text-xl text-[12px]  font-bold">{item.price}</p>
             </div>
-            <div className="flex flex-col  justify-between ">
-              <Image src={Dlete_1} alt="delete-01" className="lg:ml-[130px] ml-[50px]  lg:w-[24px] lg:[24px] w-[20px] h-[20px] " />
-              <Image src={box_1} alt="box-01" className="lg:ml-[30px] ml-[5px] lg:w-[126px] lg:h-[44px] w-[105px] h-[31px]" />
-            </div>
-          </div>
-          <div className="w-full sm:w-[667px] h-[1px] bg-gray-300" />
+            <div className="flex flex-col justify-between lg:ml-24 ">
+           <div className="ml-20">  <RiDeleteBin6Line size={15} color="red" /></div>
 
-          {/* Card 02 */}
-          <div className="flex flex-row justify-between   lg:m-[10px]  lg:w-[667px] lg:[124px]  w-full h-[99px]">
-            <div>
-              <Image src={pic_2} alt="img-02" width={1000} height={1000} className="lg:w-[124px] lg:h-[124px] w-[99px] h-[99px]" />
+              <div className="lg:w-[100px] lg:h-[40px] w-[105px] h-[31px] items-center flex justify-between p-3 lg:items-center rounded-[62px] bg-[#f0f0f0] text-gray-400 ">
+               <FiMinus />
+               1
+               <HiPlusSmall />
+              </div>
             </div>
-            <div className="flex flex-col lg:space-y-1 space-y-1 ml-[10px]">
-              <p className="lg:text-[25px] text-[10px]"><b>Gradient Graphic T-shirt</b></p>
-              <ul className="flex flex-col">
-                <li className="text-[12px]">Size: Large</li>
-                <li className="text-[12px]">Color: White</li>
-              </ul>
-              <p className="lg:text-xl  text-[12px] font-bold">$145</p>
-            </div>
-            <div className="flex flex-col justify-between">
-              <Image src={Dlete_1} alt="delete-01" className="lg:ml-[130px] ml-[50px]  lg:w-[24px] lg-[24px] w-[20px] h-[20px]" />
-              <Image src={box_1} alt="box-01" className="lg:ml-[30px]  lg:w-[126px] lg:h-[44px] w-[105px] h-[31px]" />
-            </div>
+           
           </div>
-          <div className="w-full sm:w-[667px] h-[1px] bg-gray-300" />
+         
+          
+          
+          
 
-          {/* Card 03 */}
-          <div className="flex flex-row justify-between  m-[10px]  lg:w-[667px] lg:h-[124px]  w-full h-[99px]">
-            <div>
-              <Image src={pic_3} alt="img-03" width={1000} height={1000} className="lg:w-[124px] lg:h-[124px] w-[99px] h-[99px]" />
-            </div>
-            <div className="flex flex-col lg:space-y-1 space-y-1 ml-[10px]">
-              <p className="lg:text-[25px] text-[10px]"><b>Gradient Graphic T-shirt</b></p>
-              <ul className="flex flex-col">
-                <li className="text-[12px]">Size: Large</li>
-                <li className="text-[12px]">Color: White</li>
-              </ul>
-              <p className="lg:text-xl  text-[12px] font-bold">$145</p>
-            </div>
-            <div className="flex flex-col justify-between">
-              <Image src={Dlete_1} alt="delete-01" className="lg:ml-[130px] ml-[50px] lg:w-[24px] lg-[24px] w-[20px] h-[20px]" />
-              <Image src={box_1} alt="box-01" className="lg:ml-[30px]  lg:w-[126px] lg:h-[44px] w-[105px] h-[31px]" />
-            </div>
-          </div>
+            
+          ))}
+          
+         
         </div>
+        
 
         {/* Section Two */}
-        <div className="flex flex-col lg:pl-[30px] lg:w-full sm:w-[505px] w-full h-auto px-6 py-2 space-y-6 border-[1px] border-gray-200 rounded-lg">
+        <div className="flex flex-col lg:pl-[30px] lg:w-full sm:w-[505px] w-full h-full px-6 py-2 space-y-6 border-[1px] border-gray-200 rounded-lg">
           <h1 className="text-[24px] sm:text-[20px] font-bold">Order Summary</h1>
           <ul className="w-full sm:w-[457px] h-[197px] flex flex-col space-y-5">
             <li className="flex justify-between">
@@ -100,7 +114,8 @@ export default function Cartes() {
             </li>
           </ul>
           <div className="flex flex-row  lg:justify-around gap-2 ">
-            <Image src={img_4} alt="img-04" className=" lg:w-[326px] lg:h-[48px] w-[218px] h-[48px]" />
+            <input className="bg-gray-300 px-5 lg:w-[326px] lg:h-[48px] w-[218px] h-[48px] rounded-full outline-none" placeholder="Add prome code" />
+            {/* <Image src={img_4} alt="img-04" className=" lg:w-[326px] lg:h-[48px] w-[218px] h-[48px]" /> */}
             <button className="bg-black text-white lg:w-[119px] lg:h-[48px] w-[88px] h-[48px] rounded-full hover:scale-105  transition-all cursor-pointer">
               Apply
             </button>
@@ -114,5 +129,6 @@ export default function Cartes() {
         </div>
       </div>
     </div>
+    </>
   );
 }

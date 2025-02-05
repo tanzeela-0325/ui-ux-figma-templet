@@ -33,7 +33,7 @@ export default function HeroSection() {
                         Browse through our diverse range of meticulously crafted garments.Designed<br/>
                         to bring out your individuality and cater to your sense of style.<br/>
                     </p>
-                    <button className="bg-black text-white rounded-full md:mt-4 lg:w-[210px] lg:h-[52px] md:text-center text-sm md:text-base w-[358px] h-[52px]  ml-[20px] hover:scale-105   transition-all cursor-pointer">
+                    <button className="bg-black text-white rounded-full md:mt-4 lg:w-[210px] lg:h-[52px] md:text-center text-sm md:text-base max-w-[350px] w-full h-[52px] mx-3  hover:scale-105   transition-all cursor-pointer">
                         Shop Now
                     </button>
                     <div className="grid grid-cols-2 grid-rows-2 gap-[55px] p-[56px]  md:hidden bloc">

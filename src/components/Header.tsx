@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import pic_1 from "../../public/Cart1.png";
-import pic_2 from "../../public/Frame.png";
 import { RxCross2 } from "react-icons/rx";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { MdOutlineSearch } from "react-icons/md";
 import { SheetSide } from "../components/sheet";
+import { IoMdContact } from "react-icons/io";
+
 
 export default function Header(){
     return(
@@ -32,13 +33,13 @@ export default function Header(){
                     <Link href="/">
                         <li className=" hover:text-blue-900 flex items-center hover:scale-105   transition-all cursor-pointer">Shop <RiArrowDropDownLine size={25} /></li>
                     </Link>
-                    <Link href="/products">
+                    <Link href="/Products">
                         <li className="hover:text-blue-900 hover:scale-105   transition-all cursor-pointer">Products</li>
                     </Link>
                     <Link href="/catagorys">
                         <li className="hover:text-blue-900 hover:scale-105   transition-all cursor-pointer">Catagorys</li>
                     </Link>
-                    <Link href="/carts">
+                    <Link href="/Carts">
                         <li className="hover:text-blue-900 hover:scale-105   transition-all cursor-pointer">Carts</li>
                     </Link>
                 </ul>
@@ -52,7 +53,7 @@ export default function Header(){
 
                     <div className="flex flex-row items-center gap-4 lg:gap-5">
                         <Link href={"carts"}><Image src={pic_1} alt="Ecommerce icon"  className="w-[24px] lg:w-[32px] h-[24px] lg:h-[32px] hover:scale-105  transition-all cursor-pointer" /></Link>
-                        <Image src={pic_2} alt="contact-pic " className="w-[24px] h-[24px]"/>
+                        <IoMdContact size={30} />
                     </div>
                 </div>
             </nav>
